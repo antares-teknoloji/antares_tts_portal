@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "hilmibeken.web.ttsportal", ".", "{FD36E904-6FE6-47EE-833B-51420053C9DB}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/TTS_PORTAL"
+		Debug.AspNetCompiler.PhysicalPath = "..\TTS_PORTAL\"
+		Debug.AspNetCompiler.TargetPath = "..\TTS_PORTAL\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TTS_PORTAL"
+		Release.AspNetCompiler.PhysicalPath = "..\TTS_PORTAL\"
+		Release.AspNetCompiler.TargetPath = "..\TTS_PORTAL\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "11130"
+		SlnRelativePath = "..\TTS_PORTAL\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD36E904-6FE6-47EE-833B-51420053C9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD36E904-6FE6-47EE-833B-51420053C9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B299F38E-C36E-4FED-A4B0-614ED8C8D607}
+	EndGlobalSection
+EndGlobal

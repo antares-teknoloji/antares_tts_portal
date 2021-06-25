@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Targets>
+  <Target Name="C:\Users\hb\AppData\Local\Temp\tmpA329.tmp.cadir\bin\App_Web_1hdljoof.dll">
+   <Modules>
+    <Module Name="app_web_1hdljoof.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="AlimKapatmaRapor" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnAra_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="AlimKapatmaRapor.aspx.cs" Line="93">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'AlimKapatmaRapor.btnAra_Click(object, EventArgs)' could contain the following variables 'DateTime.Now', 'this.txtCari.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnKapat_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="AlimKapatmaRapor.aspx.cs" Line="108">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'AlimKapatmaRapor.btnKapat_Click(object, EventArgs)' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="AlimKapatmaRapor.aspx.cs" Line="137">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'AlimKapatmaRapor.btnKapat_Click(object, EventArgs)' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="AlimKapatmaRapor.aspx.cs" Line="117">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'AlimKapatmaRapor.btnKapat_Click(object, EventArgs)' could contain the following variables 'this.grdKapatilacak.Rows[i].Cells[1]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VeriGetir()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="AlimKapatmaRapor.aspx.cs" Line="46">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'AlimKapatmaRapor.VeriGetir()' could contain the following variables 'DateTime.Now'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CariGenelBilgiler" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGuncelle_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="CariGenelBilgiler.aspx.cs" Line="112">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'CariGenelBilgiler.btnGuncelle_Click(object, EventArgs)' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSil_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="CariGenelBilgiler.aspx.cs" Line="226">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'CariGenelBilgiler.btnSil_Click(object, EventArgs)' could contain the following variables 'this.Session["CariRef"]', 'new string[5][3]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DosyaCek()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="CariGenelBilgiler.aspx.cs" Line="28">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'CariGenelBilgiler.DosyaCek()' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TeminatMektupCek()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="CariGenelBilgiler.aspx.cs" Line="39">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'CariGenelBilgiler.TeminatMektupCek()' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VeriCek()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="CariGenelBilgiler.aspx.cs" Line="58">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'CariGenelBilgiler.VeriCek()' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CariKart" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnArama_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="CariKart.aspx.cs" Line="53">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'CariKart.btnArama_Click(object, EventArgs)' could contain the following variables 'this.txtCariAd.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="CariKart.aspx.cs" Line="44">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'CariKart.btnArama_Click(object, EventArgs)' could contain the following variables 'this.txtPlaka.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="HbYakitDurum" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnAc_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="HbYakitDurum.aspx.cs" Line="109">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'HbYakitDurum.btnAc_Click(object, EventArgs)' could contain the following variables 'this.grdKapali.Rows[i].Cells[1].Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnAra_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="HbYakitDurum.aspx.cs" Line="85">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'HbYakitDurum.btnAra_Click(object, EventArgs)' could contain the following variables 'this.txtCari.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="HbYakitDurum.aspx.cs" Line="93">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'HbYakitDurum.btnAra_Click(object, EventArgs)' could contain the following variables 'this.txtCari.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnKapat_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="HbYakitDurum.aspx.cs" Line="126">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'HbYakitDurum.btnKapat_Click(object, EventArgs)' could contain the following variables 'this.grdAcik.Rows[i].Cells[1].Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="KapaliCariRapor" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnAc_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="KapaliCariRapor.aspx.cs" Line="208">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'KapaliCariRapor.btnAc_Click(object, EventArgs)' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="KapaliCariRapor.aspx.cs" Line="237">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'KapaliCariRapor.btnAc_Click(object, EventArgs)' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="KapaliCariRapor.aspx.cs" Line="217">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'KapaliCariRapor.btnAc_Click(object, EventArgs)' could contain the following variables 'this.grdKapatilacak.Rows[i].Cells[1]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnAra_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="KapaliCariRapor.aspx.cs" Line="188">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'KapaliCariRapor.btnAra_Click(object, EventArgs)' could contain the following variables 'this.txtCari.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="mCariGenelBilgiler" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnKaydet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="mCariGenelBilgiler.aspx.cs" Line="81">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'mCariGenelBilgiler.btnKaydet_Click(object, EventArgs)' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VeriCek()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="mCariGenelBilgiler.aspx.cs" Line="34">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'mCariGenelBilgiler.VeriCek()' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="mCariKart" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnAra_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="mCariKart.aspx.cs" Line="74">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'mCariKart.btnAra_Click(object, EventArgs)' could contain the following variables 'this.txtCariAd.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="mYonetim" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnAra_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="mYonetim.aspx.cs" Line="46">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'mYonetim.btnAra_Click(object, EventArgs)' could contain the following variables 'DateTime.Now', 'this.txtCariAd.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LimitCek()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="mYonetim.aspx.cs" Line="22">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'mYonetim.LimitCek()' could contain the following variables 'DateTime.Now'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PlakaListe" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnKaydet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="PlakaListe.aspx.cs" Line="107">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'PlakaListe.btnKaydet_Click(object, EventArgs)' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#grdPlaka_RowDeleting(System.Object,System.Web.UI.WebControls.GridViewDeleteEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="PlakaListe.aspx.cs" Line="88">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'PlakaListe.grdPlaka_RowDeleting(object, GridViewDeleteEventArgs)' could contain the following variables 'this.grdPlaka.Rows[e.RowIndex].Cells[2].Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PlakaCek()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="PlakaListe.aspx.cs" Line="38">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'PlakaListe.PlakaCek()' could contain the following variables 'this.txtPlaka.Text', 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VeriGetir()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="PlakaListe.aspx.cs" Line="24">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'PlakaListe.VeriGetir()' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RiskliCariRapor" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnAra_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="RiskliCariRapor.aspx.cs" Line="141">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'RiskliCariRapor.btnAra_Click(object, EventArgs)' could contain the following variables 'DateTime.Now', 'this.txtCari.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VeriCek()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="RiskliCariRapor.aspx.cs" Line="31">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'RiskliCariRapor.VeriCek()' could contain the following variables 'DateTime.Now'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TeminatListe" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#grdTeminat_RowDeleting(System.Object,System.Web.UI.WebControls.GridViewDeleteEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="TeminatListe.aspx.cs" Line="77">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'TeminatListe.grdTeminat_RowDeleting(object, GridViewDeleteEventArgs)' could contain the following variables 'this.grdTeminat.Rows[e.RowIndex].Cells[2].Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TeminatMektup" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnEkle_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="TeminatMektup.aspx.cs" Line="65">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'TeminatMektup.btnEkle_Click(object, EventArgs)' could contain the following variables 'this.txtCari.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetProductMasterDetBanka(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="TeminatMektup.aspx.cs" Line="50">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'TeminatMektup.GetProductMasterDetBanka(string)' could contain the following variables 'this.txtBanka.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetProductMasterDetCari(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="TeminatMektup.aspx.cs" Line="35">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'TeminatMektup.GetProductMasterDetCari(string)' could contain the following variables 'this.txtCari.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="YeniPlaka" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetProductMasterDetCari(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="YeniPlaka.aspx.cs" Line="32">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'YeniPlaka.GetProductMasterDetCari(string)' could contain the following variables 'this.txtCari.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\hb\AppData\Local\Temp\tmpA329.tmp.cadir\bin\App_Web_iaselrrq.dll">
+   <Modules>
+    <Module Name="app_web_iaselrrq.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="_Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGiris_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="Default.aspx.cs" Line="37">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in '_Default.btnGiris_Click(object, EventArgs)' could contain the following variables 'this.txtKullaniciAd.Text', 'this.txtParola.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Cari_Sec" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnAra_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="Cari_Sec.aspx.cs" Line="35">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'Cari_Sec.btnAra_Click(object, EventArgs)' could contain the following variables 'this.txtCariKod.Text', 'this.txtCariAd.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LimitGuncelle" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#VeriCek()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="LimitGuncelle.aspx.cs" Line="41">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'LimitGuncelle.VeriCek()' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="LimitGuncelle.aspx.cs" Line="31">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'LimitGuncelle.VeriCek()' could contain the following variables 'DateTime.Now.AddDays(-8)', 'DateTime.Now.AddDays(-1)', 'new object[7][5]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="m_default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGiris_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="m.default.aspx.cs" Line="29">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'm_default.btnGiris_Click(object, EventArgs)' could contain the following variables 'this.txtKullaniciAd.Text', 'this.txtParola.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TeminatDegistir" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnDegistir_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="TeminatDegistir.aspx.cs" Line="48">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'TeminatDegistir.btnDegistir_Click(object, EventArgs)' could contain the following variables 'this.Session["refs"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="TeminatDegistir.aspx.cs" Line="50">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'TeminatDegistir.btnDegistir_Click(object, EventArgs)' could contain the following variables 'this.txtCari.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetProductMasterDetBanka(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="TeminatDegistir.aspx.cs" Line="103">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'TeminatDegistir.GetProductMasterDetBanka(string)' could contain the following variables 'this.txtBanka.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetProductMasterDetCari(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="TeminatDegistir.aspx.cs" Line="88">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'TeminatDegistir.GetProductMasterDetCari(string)' could contain the following variables 'this.txtCari.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VeriGetir()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="TeminatDegistir.aspx.cs" Line="29">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'TeminatDegistir.VeriGetir()' could contain the following variables 'this.Session["refs"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="YakitBloke" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnIslem_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="YakitBloke.aspx.cs" Line="124">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'YakitBloke.btnIslem_Click(object, EventArgs)' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="YakitBloke.aspx.cs" Line="42">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'YakitBloke.Page_Load(object, EventArgs)' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VeriCek()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-06-29 11:10:34Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="YakitBloke.aspx.cs" Line="62">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'YakitBloke.VeriCek()' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\hb\Desktop\TtsPortal" File="YakitBloke.aspx.cs" Line="55">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'YakitBloke.VeriCek()' could contain the following variables 'this.Session["CariRef"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

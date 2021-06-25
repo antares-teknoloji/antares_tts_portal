@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<!-- 
+  Visual Studio global web project settings.
+-->
+<VisualWebDeveloper>
+
+  <comReferences>
+    <reference Name="interop.unityobjects" ID="{51F6657D-9972-45FD-8D5D-98849802A9C9}\1.0\0"/>
+  </comReferences>
+</VisualWebDeveloper>

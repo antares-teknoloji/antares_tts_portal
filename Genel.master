@@ -1,0 +1,312 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Genel.master.cs" Inherits="Genel" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Hilmi Beken Yakıt Yönetim Paneli</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jsmenu.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .anaResim {
+            width: 100%;
+            height: 114px;
+        }
+    </style>
+    <style>
+        .site_siniri {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .button {
+            border-radius: 25px;
+            background-color: #4F81BD;
+            color: #FFFFFF;
+            text-align: center;
+            font-family: arial, helvetica, sans-serif;
+            padding: 5px 10px 10px 10px;
+            font-weight: bold;
+        }
+
+        .banner {
+            width: 600px;
+            height: 120px;
+        }
+
+        .sol_menu {
+            float: left;
+            width: 16%;
+        }
+
+        .sag_icerik {
+            float: right;
+            width: 83%;
+            background-color: #dbdbdb;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="site_siniri">
+            <div style="float: inherit;">
+                <img src="image/shell12.jpg" style="height: 130px; width: 100%" />
+            </div>
+            <div class="sol_menu">
+                <asp:TreeView ID="LinksTreeView"
+                    Font-Names="Cambria"
+                    ForeColor="#669999"
+                    runat="server" Width="100%" BackColor="#dbdbdb" NodeWrap="True" ImageSet="BulletedList">
+
+                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+
+                    <LevelStyles>
+
+                        <asp:TreeNodeStyle ChildNodesPadding="10"
+                            Font-Bold="true"
+                            Font-Size="14pt"
+                            ForeColor="#d25400"
+                            Font-Names="Arial" />
+                        <asp:TreeNodeStyle ChildNodesPadding="5"
+                            Font-Bold="true"
+                            Font-Size="11.5pt" ForeColor="#04031b"
+                            Font-Names="Monaco" />
+                        <asp:TreeNodeStyle ChildNodesPadding="5"
+                            Font-Underline="true"
+                            Font-Size="10pt" />
+                        <asp:TreeNodeStyle ChildNodesPadding="10"
+                            Font-Size="8pt" />
+                    </LevelStyles>
+
+                    <Nodes>
+                        <asp:TreeNode Text="Yönetim" NavigateUrl="~/Yonetim.aspx"></asp:TreeNode>
+
+                        <asp:TreeNode Text="Firmalar"
+                            Expanded="true">
+                            <asp:TreeNode Text="Firma Hesap Listesi" NavigateUrl="~/CariKart.aspx" />
+                            <asp:TreeNode Text="Firma Bakiye Listesi" NavigateUrl="~/CariBakiye.aspx" />
+                            <asp:TreeNode Text="Kargo Bilgileri" NavigateUrl="~/KargoBilgileri.aspx" />
+
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Bankalar"
+                            Expanded="true">
+                            <asp:TreeNode Text="Yeni Banka Kartı" />
+                            <asp:TreeNode Text="Banka Listesi" />
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Teminat Mektupları"
+                            Expanded="true">
+                            <asp:TreeNode Text="Yeni Teminat Mektubu" NavigateUrl="~/TeminatMektup.aspx" />
+                            <asp:TreeNode Text="Teminat Mektup Listesi" NavigateUrl="~/TeminatListe.aspx" />
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="İşlemler"
+                            Expanded="true">
+                            <asp:TreeNode Text="Shell Yakıt Açma" NavigateUrl="~/ShelYakitAcma.aspx" />
+                            <asp:TreeNode Text="Bayi Kod Ayar" NavigateUrl="~/frmBayiKod.aspx" />
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Pazarlama"
+                            Expanded="true">
+                            <asp:TreeNode Text="Satış Teklif Girişi" NavigateUrl="~/AkaryakitTeklifBilgi.aspx" />
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Raporlar"
+                            Expanded="true">
+                             <asp:TreeNode Text="Günsonu Yakıt Takip " NavigateUrl="~/GunSonuKapatilanYakit.aspx" />
+                            <asp:TreeNode Text="Yakıt Takip " NavigateUrl="~/YakitTakip.aspx" />
+                            <asp:TreeNode Text="Riskli Firma" NavigateUrl="~/RiskliCariRapor.aspx" />
+                            <asp:TreeNode Text="Aylık Alım" NavigateUrl="~/AylıkMusteriAlım.aspx" />
+                            <asp:TreeNode Text="Alım Kapatılacak Firma" NavigateUrl="~/AlimKapatmaRapor.aspx" />
+                            <asp:TreeNode Text="Alım Kapalı Firma" NavigateUrl="~/KapaliCariRapor.aspx" />
+                            <asp:TreeNode Text="Musteri Aylık Lt Alım" NavigateUrl="~/MusteriAylıkLtAlım.aspx" />
+                            <asp:TreeNode Text="TTS Müşteri Takip" NavigateUrl="~/TTSMusteriTablo.aspx" />
+                            <asp:TreeNode Text="Aktif Müşteri" NavigateUrl="~/AktifCari.aspx" />
+                            <asp:TreeNode Text="Yeni Tahsilat" NavigateUrl="~/YeniTahsilat.aspx" />
+                        </asp:TreeNode>
+
+                        <asp:TreeNode Text="Ödeme İşlemleri"
+                            Expanded="true">
+                            <asp:TreeNode Text="TEB Sanal Pos Gelen Ödemeler" NavigateUrl="~/SanalPosOdeme.aspx" />
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Kârlılık"
+                            Expanded="true">
+                            <asp:TreeNode Text="İstasyon Kârlılık" NavigateUrl="~/YakitKarlilikAnaliz.aspx" />
+                            <asp:TreeNode Text="Sektör Firma Kâr" NavigateUrl="~/SektorGrading.aspx" />
+                        </asp:TreeNode>
+                    </Nodes>
+
+                    <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                    <ParentNodeStyle Font-Bold="False" />
+                    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+
+                </asp:TreeView>
+            </div>
+            <div class="sag_icerik">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <hr />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <%--<div id="wrapper-200b">
+
+    <ul class="accordion">
+
+        <li id="one2" class="files">
+
+            <a href="#one2">My Files<span>495</span></a>
+
+            <ul class="sub-menu">
+
+                <li><a href="#one2"><em>01</em>Dropbox<span>42</span></a></li>
+
+                <li><a href="#one2"><em>02</em>Skydrive<span>87</span></a></li>
+
+                <li><a href="#one2"><em>03</em>FTP Server<span>366</span></a></li>
+
+            </ul>
+
+        </li>
+
+        <li id="two2" class="mail">
+
+            <a href="#two2">Mail<span>26</span></a>
+
+            <ul class="sub-menu">
+
+                <li><a href="#two2"><em>01</em>Hotmail<span>9</span></a></li>
+
+                <li><a href="#two2"><em>02</em>Yahoo<span>14</span></a></li>
+
+                <li><a href="#two2"><em>03</em>Gmail<span>3</span></a></li>
+
+            </ul>
+
+        </li>
+
+        <li id="three2" class="cloud">
+
+            <a href="#three2">Cloud<span>58</span></a>
+
+            <ul class="sub-menu">
+
+                <li><a href="#three2"><em>01</em>Connect<span>12</span></a></li>
+
+                <li><a href="#three2"><em>02</em>Profiles<span>19</span></a></li>
+
+                <li><a href="#three2"><em>03</em>Options<span>27</span></a></li>
+
+            </ul>
+
+        </li>
+
+        <li id="four2" class="sign">
+
+            <a href="#four2">Sign Out</a>
+
+            <ul class="sub-menu">
+
+                <li><a href="#four2"><em>01</em>Log Out</a></li>
+
+                <li><a href="#four2"><em>02</em>Delete Account</a></li>
+
+                <li><a href="#four2"><em>03</em>Freeze Account</a></li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div id="wrapper-600">
+
+    <ul class="accordion">
+
+        <li id="one3" class="files">
+
+            <a href="#one3">My Files<span>495</span></a>
+
+            <ul class="sub-menu">
+
+                <li><a href="#one3"><em>01</em>Dropbox<span>42</span></a></li>
+
+                <li><a href="#one3"><em>02</em>Skydrive<span>87</span></a></li>
+
+                <li><a href="#one3"><em>03</em>FTP Server<span>366</span></a></li>
+
+            </ul>
+
+        </li>
+
+        <li id="two3" class="mail">
+
+            <a href="#two3">Mail<span>26</span></a>
+
+            <ul class="sub-menu">
+
+                <li><a href="#two3"><em>01</em>Hotmail<span>9</span></a></li>
+
+                <li><a href="#two3"><em>02</em>Yahoo<span>14</span></a></li>
+
+                <li><a href="#two3"><em>03</em>Gmail<span>3</span></a></li>
+
+            </ul>
+
+        </li>
+
+        <li id="three3" class="cloud">
+
+            <a href="#three3">Cloud<span>58</span></a>
+
+            <ul class="sub-menu">
+
+                <li><a href="#three3"><em>01</em>Connect<span>12</span></a></li>
+
+                <li><a href="#three3"><em>02</em>Profiles<span>19</span></a></li>
+
+                <li><a href="#three3"><em>03</em>Options<span>27</span></a></li>
+
+            </ul>
+
+        </li>
+
+        <li id="four3" class="sign">
+
+            <a href="#four3">Sign Out</a>
+
+            <ul class="sub-menu">
+
+                <li><a href="#four3"><em>01</em>Log Out</a></li>
+
+                <li><a href="#four3"><em>02</em>Delete Account</a></li>
+
+                <li><a href="#four3"><em>03</em>Freeze Account</a></li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+</div>--%>
+    </form>
+</body>
+</html>
