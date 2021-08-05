@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Genel.master" AutoEventWireup="true" CodeFile="TTSMusteriTablo.aspx.cs" Inherits="TTSMusteriTablo" %>
 
-<%@ Register Assembly="DevExpress.Web.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 
 
@@ -38,7 +38,7 @@
                 <td class="auto-style1">SATIŞ PERSONEL :</td>
                 <td style="width: 190px; height: 42px;">
                  <dx:ASPxComboBox ID="cmbSatisEleman" runat="server" Height="28px" Width="180px">
-                        <Items>
+                      <%--  <Items>
                             <dx:ListEditItem Text="" Value="" />
                             <dx:ListEditItem Text="Volkan Varol" Value="Volkan Varol" />
                             <dx:ListEditItem Text="Melih Beken" Value="Melih Beken" />
@@ -49,7 +49,7 @@
                             <dx:ListEditItem Text="Serkan ZeybekOğlu" Value="Serkan ZeybekOğlu" />
                             <dx:ListEditItem Text="Hüseyin Bulut" Value="Hüseyin Bulut" />
                             <dx:ListEditItem Text ="Orkun Civan" Value="Orkun Civan" />                            
-                        </Items>
+                        </Items>--%>
                     </dx:ASPxComboBox>
                 </td>
                 <td style="width: 70px; height: 42px;">Firma Ünvan :</td>

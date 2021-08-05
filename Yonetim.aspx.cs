@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 public partial class Yonetim : System.Web.UI.Page
 {
-    SqlConnection conn;
+    SqlConnection conn, connBizim;
     SqlDataAdapter adpCari;
     DataTable tblCari;
     //SqlDataAdapter adpLimit;
@@ -21,7 +21,7 @@ public partial class Yonetim : System.Web.UI.Page
             rdpSure.SelectedIndex = 0;
         }
         conn = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["baglanti"].ConnectionString);
-
+        connBizim = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["baglantiBizim"].ConnectionString);
         adpCari = new SqlDataAdapter("SELECT CODE AS [CARİ KOD],DEFINITION_ AS [CARİ AD],[SON FATURA TARİHİ]= (SELECT MAX(DATE_) " +
             "FROM LG_316_01_INVOICE INV WHERE INV.CLIENTREF=CL.LOGICALREF AND TRCODE IN  (7,8) AND INV.BRANCH='120') " +
             "FROM LG_316_CLCARD CL WHERE LOGICALREF NOT IN (SELECT CLIENTREF FROM LG_316_01_INVOICE WHERE TRCODE IN  (7,8) " +
@@ -88,10 +88,14 @@ public partial class Yonetim : System.Web.UI.Page
         //{
         //    LimitCek();
         //}
-        if (Session["Kullanici"].ToString() == "melih" || Session["Kullanici"].ToString() == "semih")
+        SqlDataAdapter adpYetki = new SqlDataAdapter("SELECT YETKI FROM CRM..KULLANICI WHERE KULLANICIAD='" + Session["Kullanici"].ToString() + "'", connBizim);
+        DataTable tblYetki = new DataTable();
+        adpYetki.Fill(tblYetki);
+        if (tblYetki.Rows[0][0].ToString() == "admin")
         {
             btnGenelRapor.Enabled = true;
             btnCariBakiye.Enabled = true;
+            btnCariHesapListesi.Enabled = true;
         }
     }
     protected void btnCariHesapListesi_Click(object sender, EventArgs e)

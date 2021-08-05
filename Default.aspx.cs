@@ -48,7 +48,9 @@ public partial class _Default : System.Web.UI.Page
                 Session["CariKod"] = kullaniciKod.ToString();
                 Session["CariAd"] = kullaniciAd.ToString();
                 Session["Kullanici"] = kullanici.ToString();
+                Session["yetki"] = kullanici.ToString();
                 Response.Redirect("Yonetim.aspx");
+                
             }
         }
     }

@@ -1,0 +1,5 @@
+﻿.HeaderFreez {
+    position: relative;
+    top: expression(this.offsetParent.scrollTop);
+    z-index: 10
+}

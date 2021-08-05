@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Yönetim Genel Rapor" Language="C#" MasterPageFile="~/Genel.master" AutoEventWireup="true" CodeFile="GenelRapor.aspx.cs" Inherits="GenelRapor" %>
 
-<%@ Register Assembly="DevExpress.Web.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 
 

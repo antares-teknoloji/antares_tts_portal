@@ -9,8 +9,8 @@ using System.Web.UI.WebControls;
 
 public partial class frmBayiKod : System.Web.UI.Page
 {
-    SqlDataAdapter adpBayiKod, adpFirma;
-    DataTable tblBayiKod, tblFirma;
+    SqlDataAdapter adpBayiKod, adpFirma, adpMusteriKod;
+    DataTable tblBayiKod, tblFirma, tblMusteriKod;
     SqlConnection connBizim;
     string firma = "";
     string firmaYeni = "";
@@ -19,15 +19,18 @@ public partial class frmBayiKod : System.Web.UI.Page
         connBizim = new SqlConnection(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["baglantiBizim"].ConnectionString);
         if (!Page.IsPostBack)
         {
-            //lstKodlar.Items.Clear();
 
-            adpBayiKod = new SqlDataAdapter("select ANABAYIKOD from TTSPORTAL_CARIBILGI WHERE ANABAYIKOD<>'0' AND ANABAYIKOD <>'NULL' GROUP BY ANABAYIKOD ORDER BY ANABAYIKOD", connBizim);
-            tblBayiKod = new DataTable();
-            adpBayiKod.Fill(tblBayiKod);
-            for (int i = 0; i < tblBayiKod.Rows.Count; i++)
+
+            adpMusteriKod = new SqlDataAdapter("select SHELLMUSTERIKOD from TTSPORTAL_CARIBILGI GROUP BY SHELLMUSTERIKOD", connBizim);
+            tblMusteriKod = new DataTable();
+            adpMusteriKod.Fill(tblMusteriKod);
+            for (int i = 0; i < tblMusteriKod.Rows.Count; i++)
             {
-                lstKodlar.Items.Add(tblBayiKod.Rows[i][0].ToString());
+                lstMusteriKod.Items.Add(tblMusteriKod.Rows[i][0].ToString());
             }
+
+
+
         }
 
     }
@@ -147,5 +150,28 @@ public partial class frmBayiKod : System.Web.UI.Page
     protected void btnTasi_Click1(object sender, EventArgs e)
     {
 
+    }
+
+    protected void lstMusteriKod_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        lstKodlar.Items.Clear();
+        adpBayiKod = new SqlDataAdapter("select ANABAYIKOD from TTSPORTAL_CARIBILGI WHERE ANABAYIKOD<>'0' AND ANABAYIKOD <>'NULL' AND SHELLMUSTERIKOD='" + lstMusteriKod.SelectedValue.ToString() + "' GROUP BY ANABAYIKOD ORDER BY ANABAYIKOD", connBizim);
+        tblBayiKod = new DataTable();
+        adpBayiKod.Fill(tblBayiKod);
+        for (int i = 0; i < tblBayiKod.Rows.Count; i++)
+        {
+            lstKodlar.Items.Add(tblBayiKod.Rows[i][0].ToString());
+        }
+    }
+
+    protected void btnSorgula_Click(object sender, EventArgs e)
+    {
+        adpMusteriKod = new SqlDataAdapter("select SHELLMUSTERIKOD from TTSPORTAL_CARIBILGI WHERE   CARIAD LIKE '%" + txtMusteriAd.Text + "%' GROUP BY SHELLMUSTERIKOD", connBizim);
+        tblMusteriKod = new DataTable();
+        adpMusteriKod.Fill(tblMusteriKod);
+        for (int i = 0; i < tblMusteriKod.Rows.Count; i++)
+        {
+            lstMusteriKod.Items.Add(tblMusteriKod.Rows[i][0].ToString());
+        }
     }
 }

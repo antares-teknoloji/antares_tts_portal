@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Genel.master" AutoEventWireup="true" CodeFile="CariGenelBilgiler.aspx.cs" Inherits="CariGenelBilgiler" %>
 
-<%@ Register Assembly="DevExpress.Web.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 
 
@@ -103,6 +103,11 @@
         }
         .auto-style3 {
             margin-left: 0px;
+        }
+
+        .auto-style4 {
+            width: 156px;
+            height: 44px;
         }
 
     </style>
@@ -222,22 +227,11 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 156px; height: 32px;">Ana Cari</td>
+                <td style="width: 156px; height: 32px;">Müşteri Shell Kodu</td>
                 <td style="width: 2px; height: 32px;">:</td>
                 <td style="height: 32px; width: 175px;">
-                    <dx:ASPxComboBox ID="cmbAnaCari" runat="server" Height="28px" Width="180px">
-                        <Items>
-                            <dx:ListEditItem Text="-" Value="-" />
-                            <dx:ListEditItem Text="ANTPED" Value="ANTPED" />
-                            <dx:ListEditItem Text="ANTAŞ" Value="ANTAŞ" />
-                            <dx:ListEditItem Text="BİRPA" Value="BİRPA" />
-                            <dx:ListEditItem Text="YENİANTALYA" Value="YENİANTALYA" />
-                            <dx:ListEditItem Text="ÇAĞMANLAR" Value="ÇAĞMANLAR" />
-                            <dx:ListEditItem Text="ORKUNÇELİK" Value="ORKUNÇELİK" />
-                            <dx:ListEditItem Text="M.H.T.DERİCİLİK" Value="M.H.T.DERİCİLİK" />
-                            <dx:ListEditItem Text="HİLMİ BEKEN" Value="HİLMİ BEKEN" />
-                        </Items>
-                    </dx:ASPxComboBox>
+                    <dx:ASPxTextBox ID="txtMusteriKod" runat="server" Height="28px" Width="180px">
+                    </dx:ASPxTextBox>
                 </td>
                 <td style="width: 141px; height: 32px;">Müşteri Online Limit</td>
                 <td style="width: 2px; height: 32px;">:</td>
@@ -247,10 +241,11 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 156px; text-align: left;">Müşteri Shell Kodu</td>
+                <td style="width: 156px; text-align: left;">Tolerans Süresi</td>
                 <td style="width: 2px">:</td>
                 <td style="width: 175px">
-                    <dx:ASPxTextBox ID="txtMusteriKod" runat="server" Height="28px" Width="180px">
+
+                    <dx:ASPxTextBox ID="txtTolerans" runat="server" Height="28px" Width="180px">
                     </dx:ASPxTextBox>
                 </td>
                 <td style="width: 141px" class="span3">Müşteri Online Limit 2</td>
@@ -261,12 +256,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 156px; height: 35px;">Tolerans Süresi</td>
+                <td style="width: 156px; height: 35px;">Ödeme Türü</td>
                 <td style="width: 2px; height: 35px;">:</td>
                 <td style="height: 35px; width: 175px;">
 
-                    <dx:ASPxTextBox ID="txtTolerans" runat="server" Height="28px" Width="180px">
-                    </dx:ASPxTextBox>
+                    <dx:ASPxComboBox ID="cmbOdemeTur" runat="server" Height="28px" Width="180px">
+                    </dx:ASPxComboBox>
                 </td>
                 <td style="border-style: outset; border-color: #000000; width: 141px; height: 35px;">Teminat Türü</td>
                 <td style="border-style: outset; border-color: #000000; width: 2px; height: 35px;">:</td>
@@ -287,12 +282,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 156px">Ödeme Türü</td>
+                <td style="width: 156px">Sözleşme Başlangıç</td>
                 <td style="width: 2px">:</td>
                 <td style="width: 175px">
 
-                    <dx:ASPxComboBox ID="cmbOdemeTur" runat="server" Height="28px" Width="180px">
-                    </dx:ASPxComboBox>
+                    <dx:ASPxDateEdit ID="dtBas" runat="server" Date="12/20/2017 15:40:15" Height="19px" Width="180px">
+                    </dx:ASPxDateEdit>
                 </td>
                 <td style="border-style: outset; border-color: #000000; width: 141px">Teminat Tutar</td>
                 <td style="border-style: outset; border-color: #000000; width: 2px">:</td>
@@ -302,11 +297,12 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 156px">Sözleşme Başlangıç</td>
+                <td style="width: 156px">Sözleşme Bitiş</td>
                 <td style="width: 2px">:</td>
                 <td style="width: 175px">
-                    <dx:ASPxDateEdit ID="dtBas" runat="server" Date="12/20/2017 15:40:15" Height="19px" Width="180px">
+                    <dx:ASPxDateEdit ID="dtBit" runat="server" Date="12/20/2017 15:40:21" Width="180px">
                     </dx:ASPxDateEdit>
+
                 </td>
                 <td style="border-style: outset; border-color: #000000; width: 141px">Banka Adı</td>
                 <td style="border-style: outset; border-color: #000000; width: 2px">:</td>
@@ -316,11 +312,11 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 156px; height: 46px;">Sözleşme Bitiş</td>
+                <td style="width: 156px; height: 46px;">Taahhüt Litre m3</td>
                 <td style="width: 2px; height: 46px;">:</td>
                 <td style="width: 175px; height: 46px;">
-                    <dx:ASPxDateEdit ID="dtBit" runat="server" Date="12/20/2017 15:40:21" Width="180px">
-                    </dx:ASPxDateEdit>
+                    <dx:ASPxTextBox ID="txtTaahhutLitre" runat="server" Height="28px" Width="180px" DisplayFormatString="n">
+                    </dx:ASPxTextBox>
 
                 </td>
                 <td style="border-style: outset; border-color: #000000; width: 141px; height: 46px;">Banka Dbs Kod</td>
@@ -331,10 +327,10 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 156px">Taahhüt Litre m3</td>
+                <td style="width: 156px">Fatura sistemi</td>
                 <td style="width: 2px">:</td>
                 <td style="width: 175px">
-                    <dx:ASPxTextBox ID="txtTaahhutLitre" runat="server" Height="28px" Width="180px" DisplayFormatString="n">
+                    <dx:ASPxTextBox ID="txtFaturaTur" runat="server" Height="28px" Width="180px" DisplayFormatString="n">
                     </dx:ASPxTextBox>
                 </td>
                 <td style="border-style: ridge; border-color: #FFFF00; width: 141px">Teminat Tür 2</td>
@@ -354,11 +350,11 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 156px; height: 42px;">Fatura sistemi</td>
+                <td style="width: 156px; height: 42px;">Sektör Seçimi</td>
                 <td style="width: 2px; height: 42px;">:</td>
                 <td style="width: 175px; height: 42px;">
-                    <dx:ASPxTextBox ID="txtFaturaTur" runat="server" Height="28px" Width="180px" DisplayFormatString="n">
-                    </dx:ASPxTextBox>
+                  <asp:DropDownList ID= "dpSektor" runat="server" Height="46px" Width="180px">
+                  </asp:DropDownList>
                     <br />
                 </td>
                 <td style="border-style: ridge; border-color: #FFFF00; width: 141px; height: 42px;">Teminat Tutar 2</td>
@@ -371,10 +367,10 @@
             </tr>
             <tr>
 
-                <td style="width: 156px; height: 42px;">Kargo Eşleştirme</td>
+                <td style="width: 156px; height: 42px;">Pratik Kart No</td>
                 <td style="width: 2px; height: 42px;">&nbsp;</td>
                 <td style="width: 175px; height: 42px;">
-                    <dx:ASPxTextBox ID="txtKargoEslestirme" runat="server" Height="20px" Width="180px">
+                    <dx:ASPxTextBox ID="txtPratıkKartNo" runat="server" Height="28px" Width="180px">
                     </dx:ASPxTextBox>
                     <br />
                 </td>
@@ -386,10 +382,10 @@
                 </td>
             </tr>
             <tr>
-                    <td style="width: 156px; height: 44px;">Sektör Seçimi</td>
+                    <td style="width: 156px; height: 44px;">Çıkış Sebebi</td>
                 <td style="width: 2px; height: 44px;">:</td>
                 <td style="width: 175px; height: 44px;">
-                  <asp:DropDownList ID= "dpSektor" runat="server" Height="46px" Width="180px">
+                  <asp:DropDownList ID= "dpCıkıs" runat="server" Height="46px" Width="180px">
                   </asp:DropDownList>
                 </td>
                 
@@ -400,23 +396,8 @@
                     </dx:ASPxTextBox>
                 </td>
                </tr>
-            <tr>
-                 <td style="width: 156px; text-align: left;">Pratik Kart No</td>
-                <td style="width: 2px">:</td>
-                <td style="width: 175px">
-                    <dx:ASPxTextBox ID="txtPratıkKartNo" runat="server" Height="28px" Width="180px">
-                    </dx:ASPxTextBox>
-                    <br />
-                    </td>
-           </tr>
-            <tr>
-            <td style="width: 156px; height: 44px;">Çıkış Sebebi</td>
-                <td style="width: 12px; height: 44px;">:</td>
-                <td style="width: 175px; height: 44px;">
-                  <asp:DropDownList ID= "dpCıkıs" runat="server" Height="46px" Width="180px">
-                  </asp:DropDownList>
-                   </td>                       
-                     </tr>
+           
+            
         </table>
     <br />
     <div style="width: 100%">
@@ -733,7 +714,7 @@
         </div>
         <br />
         <div>               
-  <asp:GridView ID="grdDetaySatis" runat="server" CellPadding="4" ShowFooter="True" Style="text-align: right" Width="99%" AllowSorting="True" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CaptionAlign="Right" CellSpacing="2" Font-Size="Small" ForeColor="Black" Height="246px">
+  <asp:GridView ID="grdDetaySatis" runat="server" CellPadding="4" ShowFooter="True" Style="text-align: right" Width="99%" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CaptionAlign="Right" CellSpacing="2" Font-Size="Small" ForeColor="Black" Height="246px">
         <FooterStyle BackColor="#CCCCCC" />
         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
         <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
@@ -755,7 +736,7 @@
         <br />
         <br />
         <div>
-    <asp:GridView ID="grdAracBazliPlakaDokum" runat="server" CellPadding="4" ShowFooter="True" Style="text-align: right" Width="99%" AllowSorting="True" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CaptionAlign="Right" CellSpacing="2" Font-Size="Small" ForeColor="Black" Height="212px">
+    <asp:GridView ID="grdAracBazliPlakaDokum" runat="server" CellPadding="4" ShowFooter="True" Style="text-align: right" Width="99%" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CaptionAlign="Right" CellSpacing="2" Font-Size="Small" ForeColor="Black" Height="212px">
 
         <FooterStyle BackColor="#CCCCCC" />
         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
@@ -771,7 +752,7 @@
         <br />
         <br />
         <br />
-    <asp:GridView ID="grdDetayKarlilik" runat="server" CellPadding="4" ShowFooter="True" Style="text-align: right" Width="99%" AllowSorting="True" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CaptionAlign="Right" CellSpacing="2" Font-Size="Small" ForeColor="Black" Height="206px">
+    <asp:GridView ID="grdDetayKarlilik" runat="server" CellPadding="4" ShowFooter="True" Style="text-align: right" Width="99%" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CaptionAlign="Right" CellSpacing="2" Font-Size="Small" ForeColor="Black" Height="206px">
 
         <FooterStyle BackColor="#CCCCCC" />
         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />

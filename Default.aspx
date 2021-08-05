@@ -33,7 +33,7 @@ h6{
     display:inline-block;
     
 }
-
+ 
 .align-left{
     float: left;
     color:rgb(90, 90, 90);

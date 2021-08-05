@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Genel.master" AutoEventWireup="true" CodeFile="Yonetim.aspx.cs" Inherits="Yonetim" %>
 
-<%@ Register Assembly="DevExpress.Web.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -11,7 +11,7 @@
         </dx:ASPxButton>
         <div style="text-align: left">
             <br />
-            <asp:Button ID="btnCariHesapListesi" runat="server" Text="Cari Hesap Listesi" Font-Names="Time" CssClass="button" BackColor="Silver" Height="61px" Width="267px" ForeColor="Black" OnClick="btnCariHesapListesi_Click" />
+            <asp:Button ID="btnCariHesapListesi" runat="server" Text="Cari Hesap Listesi" Font-Names="Time" CssClass="button" BackColor="Silver" Height="61px" Width="267px" ForeColor="Black" OnClick="btnCariHesapListesi_Click" Enabled="False" />
             <asp:Button ID="btnGenelRapor" runat="server" Text="Yönetim Genel Rapor" Font-Names="Time" CssClass="button" BackColor="Silver" Height="61px" Width="267px" ForeColor="Black" OnClick="btnGenelRapor_Click" Enabled="False" />
             <asp:Button ID="btnCariBakiye" runat="server" Text="Cari Bakiye Listesi" Font-Names="Time" CssClass="button" BackColor="Silver" Height="61px" Width="267px" ForeColor="Black" OnClick="btnCariBakiye_Click" Enabled="False" />
             <br />

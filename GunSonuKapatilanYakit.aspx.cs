@@ -19,7 +19,7 @@ public partial class GunSonuKapatilanYakit : System.Web.UI.Page
 
     protected void btnArama_Click(object sender, EventArgs e)
     {
-        adpVeri = new SqlDataAdapter("SELECT TCG.CARIAD AS [CARİ AD],TG.LIMIT AS [KALAN LİMİT] FROM TTS_GUNLUK_YAKIT_KAPATMA TG LEFT OUTER JOIN TTSPORTAL_CARIBILGI TCG ON TCG.CARIKOD=TG.CARIKOD  WHERE TG.TARIH=CONVERT(DATETIME,'" + dtTarih.Text + "',104) AND TCG.CARIAD LIKE  ('%" + txtCariAd.Text + "%')", connBizim);
+        adpVeri = new SqlDataAdapter("SELECT TCG.CARIAD AS [CARİ AD],TG.LIMIT AS [KALAN LİMİT] FROM TTS_GUNLUK_YAKIT_KAPATMA TG LEFT OUTER JOIN TTSPORTAL_CARIBILGI TCG ON TCG.CARIKOD=TG.CARIKOD  WHERE TG.TARIH=CONVERT(DATETIME,'" + dtTarih.Text + "',104) AND TCG.CARIAD LIKE  ('%" + txtCariAd.Text + "%')  GROUP BY TCG.CARIAD,TG.LIMIT", connBizim);
         tblVeri = new DataTable();
         adpVeri.Fill(tblVeri);
         this.grdGunlukKapatma.DataSource = tblVeri;

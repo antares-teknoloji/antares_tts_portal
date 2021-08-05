@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Genel.master" AutoEventWireup="true" CodeFile="frmBayiKod.aspx.cs" Inherits="frmBayiKod" %>
 
-<%@ Register Assembly="DevExpress.Web.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <style type="text/css">
@@ -24,6 +24,17 @@
         .auto-style5 {
             width: 422px;
         }
+
+        .auto-style6 {
+            height: 42px;
+            text-align: right;
+        }
+
+        .auto-style7 {
+            height: 42px;
+            width: 422px;
+            text-align: right;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -32,6 +43,29 @@
         </dx:ASPxButton>
     </p>
 
+    <table>
+        <tr>
+            <td class="auto-style6">&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label3" runat="server" Text="Müşteri Ad :" Font-Bold="True"></asp:Label>
+                <asp:TextBox ID="txtMusteriAd" runat="server" Width="163px" Font-Bold="True"></asp:TextBox>
+            </td>
+            <td class="auto-style7">
+                <asp:Label ID="Label5" runat="server" Text="Shell Müşteri Kod :" Font-Bold="True"></asp:Label>
+                <asp:TextBox ID="txtMusteriKod" runat="server" Width="163px" Font-Bold="True"></asp:TextBox>
+            </td>
+            <td class="auto-style3">&nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnSorgula" runat="server" Height="38px" OnClick="btnSorgula_Click" Text="Sorgula" Width="292px" Font-Bold="True" />
+            </td>
+
+
+        </tr>
+    </table>
+    <br />
+    <br />
     <table>
         <tr>
             <td class="auto-style3">&nbsp;&nbsp;&nbsp;
@@ -62,6 +96,9 @@
 
         <table>
             <tr>
+                <td class="auto-style1">
+                    <asp:ListBox ID="lstMusteriKod" runat="server" Height="609px" Width="308px" AutoPostBack="True" OnSelectedIndexChanged="lstMusteriKod_SelectedIndexChanged"></asp:ListBox>
+                </td>
                 <td class="auto-style1">
                     <asp:ListBox ID="lstKodlar" runat="server" Height="609px" Width="308px" AutoPostBack="True" OnSelectedIndexChanged="lstKodlar_SelectedIndexChanged"></asp:ListBox>
                 </td>
