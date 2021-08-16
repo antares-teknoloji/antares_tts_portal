@@ -70,7 +70,7 @@
             width: 100px;
         }
     </style>
-
+  <meta http-equiv="Refresh" content="300;url=Default.aspx" />
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
