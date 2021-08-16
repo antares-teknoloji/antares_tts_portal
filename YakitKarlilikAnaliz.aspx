@@ -10,6 +10,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <meta http-equiv="Refresh" content="300;url=Default.aspx" />
     <script src="jquery-1.4.1.min.js"></script>
             <script language="javascript" >
                 $(document).ready(function () {
