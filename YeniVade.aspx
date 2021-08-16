@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="YeniVade.aspx.cs" Inherits="YeniVade" %>
 
 <!DOCTYPE html>
-
+ <meta http-equiv="Refresh" content="300;url=Default.aspx" />
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
