@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -41,15 +41,7 @@ public partial class AylıkMusteriAlım : System.Web.UI.Page
         grdVeri.DataBind();
         ViewState["dirState"] = tblFirmaKarDiger;
         ViewState["sortdr"] = "Asc";
-        for (int i = 0; i < grdVeri.Rows.Count; i++)
-        {
-            for (int j = 1; j < 40; j++)
-            {
-                decimal sayi = Convert.ToDecimal(grdVeri.Rows[i].Cells[j].Text);
-                grdVeri.Rows[i].Cells[j].Text = sayi.ToString("N");
-            }
-
-        }
+        
     }
     protected void grdVeri_Sorting(object sender, GridViewSortEventArgs e)
     {
