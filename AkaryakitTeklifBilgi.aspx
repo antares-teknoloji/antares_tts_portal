@@ -214,6 +214,7 @@
 
       
     </style>
+     <meta http-equiv="Refresh" content="240;url=Yönetim.aspx" />
 </head>
 <body>
     <form id="form1" runat="server">
