@@ -6,6 +6,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+      <meta http-equiv="Refresh" content="300;url=Default.aspx" />
      <div style="background-color: #3366CC; font-weight: 700; height: 25px; text-align: center;" aria-checked="undefined" dir="ltr">
         <dx:aspxbutton ID="ASPxButton1" runat="server" Height="100%" Text="Cari Hesap Listesi" Width="100%" AutoPostBack="False" AllowFocus="False" >
         </dx:aspxbutton>        
