@@ -111,6 +111,7 @@
         }
 
     </style>
+    <meta http-equiv="Refresh" content="240;url=CariKart.aspx" />
     <div style="background-color: #3366CC; font-weight: 700; height: 25px; text-align: center;" aria-checked="undefined" dir="ltr">
         <dx:ASPxButton ID="ASPxButton1" runat="server" Height="100%" Text="Cari Güncelleme" Width="100%" AutoPostBack="False">
         </dx:ASPxButton>
