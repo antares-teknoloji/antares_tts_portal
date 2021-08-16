@@ -7,6 +7,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <meta http-equiv="Refresh" content="300;url=Default.aspx" />
     <dx:ASPxButton ID="ASPxButton1" runat="server" Height="100%" Text="Sektör Firma Kar" Width="100%" AutoPostBack="False">
     </dx:ASPxButton>
     <br />
