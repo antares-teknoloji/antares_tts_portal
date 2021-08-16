@@ -6,6 +6,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+       <meta http-equiv="Refresh" content="300;url=Default.aspx" />
 
     
         
