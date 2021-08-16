@@ -3,6 +3,7 @@
 <%@ Register Assembly="DevExpress.Web.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+       <meta http-equiv="Refresh" content="300;url=Default.aspx" />
     <div style="background-color: #3366CC; font-weight: 700; height: 28px; text-align: center;">
         <dx:ASPxButton ID="ASPxButton1" runat="server" Height="100%" Text="Teminat Mektup Girişi" Width="100%" AutoPostBack="False">
         </dx:ASPxButton>
