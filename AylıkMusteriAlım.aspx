@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Genel.master" AutoEventWireup="true" CodeFile="AylıkMusteriAlım.aspx.cs" Inherits="AylıkMusteriAlım" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Genel.master" AutoEventWireup="true" CodeFile="AylıkMusteriAlım.aspx.cs" Inherits="AylıkMusteriAlım" %>
 <%@ Register Assembly="DevExpress.Web.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 
@@ -6,6 +6,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <meta http-equiv="Refresh" content="300;url=Default.aspx" />
     <dx:ASPxButton ID="ASPxButton1" runat="server" Height="100%" Text="Müşteri Karlılık Raporu" Width="100%" AutoPostBack="False">
     </dx:ASPxButton>
     <br />
@@ -18,8 +19,8 @@
                 <td style="width: 65px; height: 42px;">Yıl :</td>
                 <td style="width: 190px; height: 42px;">
                     <asp:DropDownList ID="dpYil" runat="server">
-                        <asp:ListItem>2020</asp:ListItem>
                         <asp:ListItem>2021</asp:ListItem>
+                        <asp:ListItem>2020</asp:ListItem>                   
                         <asp:ListItem>2022</asp:ListItem>
                         <asp:ListItem>2023</asp:ListItem>
                         <asp:ListItem>2024</asp:ListItem>
@@ -42,10 +43,12 @@
 
     </div>
     <br />
-    <asp:GridView ID="grdVeri" runat="server" CellPadding="4" ShowFooter="True" Style="text-align: right" Width="100%" AllowSorting="True" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CaptionAlign="Right" CellSpacing="2" Font-Size="Small" ForeColor="Black" Font-Names=" Copperplate" OnSorting="grdVeri_Sorting">
+    <asp:GridView ID="grdVeri" runat="server" CellPadding="4" ShowFooter="True" Style="text-align: right" Width="100%" AllowSorting="True" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CaptionAlign="Right" CellSpacing="2" Font-Size="Smaller" ForeColor="Black" Font-Names=" Copperplate" OnSorting="grdVeri_Sorting">
 
-        <FooterStyle BackColor="#CCCCCC" />
-        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+
+
+       <FooterStyle BackColor="#CCCCCC" />
+        <HeaderStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
         <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
         <RowStyle BackColor="White" />
         <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
