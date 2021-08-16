@@ -126,10 +126,10 @@
                             Expanded="true">
                              <asp:TreeNode Text="Günsonu Yakıt Takip " NavigateUrl="~/GunSonuKapatilanYakit.aspx" />
                             <asp:TreeNode Text="Yakıt Takip " NavigateUrl="~/YakitTakip.aspx" />
-                            <asp:TreeNode Text="Riskli Firma" NavigateUrl="~/RiskliCariRapor.aspx" />
-                            <asp:TreeNode Text="Aylık Alım" NavigateUrl="~/AylıkMusteriAlım.aspx" />                            
+                            <asp:TreeNode Text="Riskli Firma" NavigateUrl="~/RiskliCariRapor.aspx" />                                     
                             <asp:TreeNode Text="Alım Kapalı Firma" NavigateUrl="~/KapaliCariRapor.aspx" />
-                            <asp:TreeNode Text="Musteri Aylık Lt Alım" NavigateUrl="~/MusteriAylıkLtAlım.aspx" />
+                              <asp:TreeNode Text="Müşteri Kârlılık" NavigateUrl="~/AylıkMusteriAlım.aspx" />               
+                            <asp:TreeNode Text="Müçteri Aylık Litre Alım" NavigateUrl="~/MusteriAylıkLtAlım.aspx" />
                             <asp:TreeNode Text="TTS Müşteri Takip" NavigateUrl="~/TTSMusteriTablo.aspx" />
                             <asp:TreeNode Text="Aktif Müşteri" NavigateUrl="~/AktifCari.aspx" />
                             <asp:TreeNode Text="Yeni Tahsilat" NavigateUrl="~/YeniTahsilat.aspx" />
