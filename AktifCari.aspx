@@ -99,7 +99,7 @@
 }
 
     </style>
-
+   <meta http-equiv="Refresh" content="300;url=Default.aspx" />
     <dx:ASPxButton ID="ASPxButton1" runat="server" Height="100%" Text="Aktif Cari" Width="100%" AutoPostBack="False">
     </dx:ASPxButton>
     <br />
