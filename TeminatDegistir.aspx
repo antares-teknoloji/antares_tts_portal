@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
     <div style="background-color: #CCCCCC">
-    
+     <meta http-equiv="Refresh" content="300;url=Default.aspx" />
         <table width="100%">
             <tr style="height: 42px">
                 <td style="width: 210px;"><strong>Cari Ünvan</strong></td>
