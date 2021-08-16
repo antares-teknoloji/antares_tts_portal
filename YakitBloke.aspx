@@ -21,6 +21,7 @@
             text-align: center;
         }
     </style>
+     <meta http-equiv="Refresh" content="300;url=Default.aspx" />
 </head>
 <body>
     <form id="form1" runat="server">
