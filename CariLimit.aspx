@@ -4,6 +4,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+        <meta http-equiv="Refresh" content="300;url=Default.aspx" />
     <div style="height: 33px">
         <table>
             <tr>
