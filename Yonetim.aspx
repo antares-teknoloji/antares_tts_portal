@@ -4,7 +4,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-
+ <meta http-equiv="Refresh" content="300;url=Default.aspx" />
 
     <div style="background-color: #C0C0C0; height: 28px;">
         <dx:ASPxButton ID="ASPxButton13" runat="server" Height="100%" Text="Yönetim" Width="100%" BackColor="#EEEEEE">
