@@ -38,6 +38,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+     <meta http-equiv="Refresh" content="300;url=Default.aspx" />
     <p>
         <dx:ASPxButton ID="ASPxButton1" runat="server" Height="100%" Text="Bayi Kod" Width="100%" AutoPostBack="False">
         </dx:ASPxButton>
