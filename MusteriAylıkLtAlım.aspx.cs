@@ -150,14 +150,7 @@ public partial class MusteriAylıkLtAlım : System.Web.UI.Page
             }
             grdVeri.DataSource = dtrslt;
             grdVeri.DataBind();
-            for (int i = 0; i < grdVeri.Rows.Count; i++)
-            {
-                for (int j = 2; j < 15; j++)
-                {
-                    decimal sayi = Convert.ToDecimal(grdVeri.Rows[i].Cells[j].Text);
-                    grdVeri.Rows[i].Cells[j].Text = sayi.ToString("N");
-                }
-            }
+           
 
         }
 
